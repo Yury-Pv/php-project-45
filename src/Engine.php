@@ -1,15 +1,17 @@
 <?php
 
-namespace BrainGames\Cli2;
+namespace BrainGames\Engine;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
 
 use function cli\line;
 use function cli\prompt;
+use BrainGames\Greeting;
 
-function run()
+function evengame()
 {
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    $name = Greeting\greeting();
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
 
@@ -33,7 +35,7 @@ function run()
 	}
 
 	else {
-	    line("{$answer} is wrong answer. Correct answer was {$check}\n Let's try again, {$name}!");
+	    line("'{$answer}' is wrong answer. Correct answer was '{$check}'\nLet's try again {$name}!");
 	    break;
 	}
     }

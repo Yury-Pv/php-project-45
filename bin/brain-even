@@ -12,6 +12,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use BrainGames\Cli2;
+use BrainGames\Engine;
 
-print_r(Cli2\run());
+print_r(Engine\evengame());
