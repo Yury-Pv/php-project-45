@@ -4,7 +4,7 @@
 <a href="https://codeclimate.com/github/Yury-Pv/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/9b6855b946c2d97f6ceb/maintainability" /></a>
 
 
-https://asciinema.org/a/fiYuKlFuxEtb9JpdS0XLkluLB - Ссылка на видео с примером установки зависимостей make install, примером игры с победой и поражение м игрока.
+https://asciinema.org/a/fiYuKlFuxEtb9JpdS0XLkluLB - Ссылка на видео с примером установки зависимостей make install, примером игры с победой  brain-evenи поражение м игрока.
 
 
-https://asciinema.org/a/ZYl9u2Vb9PknTANXGIzyszoTY - Видео с примером brain-успешным и неуспешными исходами.
+https://asciinema.org/a/ZYl9u2Vb9PknTANXGIzyszoTY - Видео с примером brain-успешны игрым и неуcalcспешными исходами.
