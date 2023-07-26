@@ -25,7 +25,7 @@ function evengame()
 
 	line("Question:{$var}\nYour answer:");
 	$answer = trim(fgets(STDIN));
-	if($answer == $check){
+	if($answer === $check){
 	    line("Correct!");
 	    if($i === 3) {
 		line("Congratulations, {$name}!");
@@ -35,8 +35,58 @@ function evengame()
 	}
 
 	else {
-	    line("'{$answer}' is wrong answer. Correct answer was '{$check}'\nLet's try again {$name}!");
+	    line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
 	    break;
 	}
     }
 }
+
+
+
+function calcgame()
+{
+
+    $name = Greeting\greeting();
+    line('What is the result of the expression?');
+
+    for ($i = 1; $i < 4; $i+=1){
+
+        $first_number = mt_rand(0, 1000);
+	$second_number = mt_rand(0, 1000);
+	$arr = array('-', '+', '*');
+	$curr_op_sw = mt_rand(0, 2);
+	$curr_op = $arr[$curr_op_sw];
+	$show = ("$first_number $curr_op $second_number");
+
+
+	switch ($curr_op) {
+	    case '+':
+		$check = $first_number + $second_number;
+	    	break;
+	    case '-':
+                $check = $first_number - $second_number;
+                break;
+	    case '*':
+                $check = $first_number * $second_number;
+                break;
+	}
+
+	line("Question: {$show}");
+	$answer = prompt('Your answer');
+
+	if((int)$answer === $check){
+	    line("Correct!");
+            if($i === 3) {
+                line("Congratulations, {$name}!");
+                break;
+            }
+            continue;
+        }
+
+        else {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            break;
+        }
+    }
+}
+

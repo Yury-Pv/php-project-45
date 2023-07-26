@@ -8,3 +8,5 @@ lint: #запуск линтера
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 brain-even: #запуск программы
 	./bin/brain-even
+brain-calc: #запуск программы 
+	./bin/brain-calc

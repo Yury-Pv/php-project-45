@@ -5,3 +5,6 @@
 
 
 https://asciinema.org/a/fiYuKlFuxEtb9JpdS0XLkluLB - Ссылка на видео с примером установки зависимостей make install, примером игры с победой и поражение м игрока.
+
+
+https://asciinema.org/a/ZYl9u2Vb9PknTANXGIzyszoTY - Видео с примером brain-успешным и неуспешными исходами.
