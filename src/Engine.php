@@ -90,3 +90,49 @@ function calcgame()
     }
 }
 
+
+
+function gcdgame() 
+{
+
+    $name = Greeting\greeting();
+    line('Find the greatest common divisor of given numbers.');
+
+    for ($i = 1; $i < 4; $i+=1){
+
+        $first_number = mt_rand(1, 100);
+        $second_number = mt_rand(1, 100);
+	$check = 1;
+	$show = ("$first_number $second_number");
+	$lowest = $first_number;
+
+	if($second_number < $first_number){
+	    $lowest = $second_number;
+	}
+
+	for ($iter = 1; $iter <= $lowest; $iter+=1){
+
+	    if(($first_number % $iter == 0) && ($second_number % $iter == 0)){
+		$check = $iter;
+	    }
+	}
+
+
+	line("Question: {$show}");
+        $answer = prompt('Your answer');
+
+        if($answer == $check){
+            line("Correct!");
+            if($i === 3) {
+                line("Congratulations, {$name}!");
+                break;
+            }
+            continue;
+        }
+
+        else {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            break;
+        }
+    }
+}

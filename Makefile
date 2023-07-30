@@ -10,3 +10,5 @@ brain-even: #запуск программы
 	./bin/brain-even
 brain-calc: #запуск программы 
 	./bin/brain-calc
+brain-gcd: #запуск программы
+	./bin/brain-gcd
