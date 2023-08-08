@@ -136,3 +136,57 @@ function gcdgame()
         }
     }
 }
+
+
+
+function progressiongame()
+{
+
+    $name = Greeting\greeting();
+    line('What number is missing in the progression?');
+
+    for ($i = 1; $i < 4; $i+=1){
+
+	$first_number = mt_rand(1, 100);
+        $pitch = mt_rand(1, 30);
+	$show = "{$first_number} ";
+	$check = 0;
+	$blank_space = mt_rand(0, 9);
+	$current = $first_number;
+
+	if($blank_space == 0){
+	    $show = ".. ";
+	    $check = $first_number;
+	}
+
+	for ($iter = 1; $iter <10; $iter += 1){
+
+	    $current = $current + $pitch;
+
+	    if($iter == $blank_space){
+		$show = $show . ".. ";
+		$check = $current;
+	    }
+	    else{
+		$show = $show . "{$current} ";
+	    }
+	}
+
+	line("Question: {$show}");
+        $answer = prompt('Your answer');
+
+        if($answer == $check){
+            line("Correct!");
+            if($i === 3) {
+                line("Congratulations, {$name}!");
+                break;
+            }
+            continue;
+        }
+
+        else {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            break;
+        }
+    }
+}

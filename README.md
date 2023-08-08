@@ -7,3 +7,4 @@
 https://asciinema.org/a/fiYuKlFuxEtb9JpdS0XLkluLB - Пример игры brain-even .
 https://asciinema.org/a/ZYl9u2Vb9PknTANXGIzyszoTY - Пример игры brain-calc.
 https://asciinema.org/a/QQCZvQWb0TLcenc4sGKbdJFyh - Пример игры brain-gcd.
+https://asciinema.org/a/XTOX3blepVCsIiUSHISr8FHFP - Пример игры brain-progression.
