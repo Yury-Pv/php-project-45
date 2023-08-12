@@ -8,3 +8,4 @@ https://asciinema.org/a/fiYuKlFuxEtb9JpdS0XLkluLB - Пример игры brain-
 https://asciinema.org/a/ZYl9u2Vb9PknTANXGIzyszoTY - Пример игры brain-calc.
 https://asciinema.org/a/QQCZvQWb0TLcenc4sGKbdJFyh - Пример игры brain-gcd.
 https://asciinema.org/a/XTOX3blepVCsIiUSHISr8FHFP - Пример игры brain-progression.
+https://asciinema.org/a/hsJLzsKIpiJoIVYeKy5txbklX - Пример игры brain-prime.

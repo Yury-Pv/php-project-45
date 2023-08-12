@@ -23,8 +23,9 @@ function evengame()
 	    $check = 'yes';
 	}
 
-	line("Question:{$var}\nYour answer:");
-	$answer = trim(fgets(STDIN));
+	line("Question: {$var}");
+        $answer = prompt('Your answer');
+
 	if($answer === $check){
 	    line("Correct!");
 	    if($i === 3) {
@@ -173,6 +174,64 @@ function progressiongame()
 	}
 
 	line("Question: {$show}");
+        $answer = prompt('Your answer');
+
+        if($answer == $check){
+            line("Correct!");
+            if($i === 3) {
+                line("Congratulations, {$name}!");
+                break;
+            }
+            continue;
+        }
+
+        else {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            break;
+        }
+    }
+}
+
+
+function primegame()
+{
+
+    $name = Greeting\greeting();
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
+
+    for ($i = 1; $i < 4; $i+=1){
+
+	$random_number = mt_rand(2, 100);
+	$show = $random_number;
+	$check = 'yes';
+
+	if($random_number == 2){
+	    line("Question: {$show}");
+            $answer = prompt('Your answer');
+
+            if($answer == $check){
+                line("Correct!");
+                if($i === 3) {
+                    line("Congratulations, {$name}!");
+                    break;
+                }
+                continue;
+            }
+
+            else {
+                line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+                break;
+            }
+	}
+
+	for ($iter = 2; $iter < $random_number; $iter+=1){
+	    if($random_number % $iter == 0){
+	        $check = 'no';
+		break;
+	    }
+	}
+
+        line("Question: {$show}");
         $answer = prompt('Your answer');
 
         if($answer == $check){

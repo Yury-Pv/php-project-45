@@ -14,3 +14,5 @@ brain-gcd: #запуск программы
 	./bin/brain-gcd
 brain-progression: #запуск программы
 	./bin/brain-progression
+brain-prime: #запуск программы
+	./bin/brain-prime
