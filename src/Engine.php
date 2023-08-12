@@ -26,17 +26,16 @@ function evengame()
         $answer = prompt('Your answer');
 
         if ($answer === $check) {
-	    line("Correct!");
+            line("Correct!");
             if ($i === 3) {
                 line("Congratulations, {$name}!");
                 break;
             }
             continue;
-        }
-        else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-            break;
-        }
+        } else {
+              line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+              break;
+          }
     }
 }
 
@@ -60,13 +59,13 @@ function calcgame()
         switch ($curr_op) {
             case '+':
                 $check = $first_number + $second_number;
-            break;
+                break;
             case '-':
                 $check = $first_number - $second_number;
-            break;
+                break;
             case '*':
                 $check = $first_number * $second_number;
-            break;
+                break;
         }
 
         line("Question: {$show}");
@@ -79,11 +78,10 @@ function calcgame()
                 break;
             }
             continue;
-        }
-        else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-            break;
-        }
+        } else {
+              line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+              break;
+          }
     }
 }
 
@@ -106,8 +104,8 @@ function gcdgame()
             $lowest = $second_number;
         }
 
-	for ($iter = 1; $iter <= $lowest; $iter += 1) {
-            if(($first_number % $iter == 0) && ($second_number % $iter == 0)){
+        for ($iter = 1; $iter <= $lowest; $iter += 1) {
+            if (($first_number % $iter == 0) && ($second_number % $iter == 0)){
                 $check = $iter;
             }
         }
@@ -123,11 +121,10 @@ function gcdgame()
                 break;
             }
             continue;
-        }
-        else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-            break;
-        }
+        } else {
+              line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+              break;
+          }
     }
 }
 
@@ -155,13 +152,12 @@ function progressiongame()
         for ($iter = 1; $iter < 10; $iter += 1) {
             $current = $current + $pitch;
 
-            if($iter == $blank_space){
+            if ($iter == $blank_space) {
                 $show = $show . ".. ";
                 $check = $current;
-            }
-            else {
-                $show = $show . "{$current} ";
-            }
+            } else {
+                  $show = $show . "{$current} ";
+              }
 	}
 
         line("Question: {$show}");
@@ -174,12 +170,10 @@ function progressiongame()
                 break;
             }
             continue;
-        }
-
-        else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-            break;
-        }
+        } else {
+              line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+              break;
+          }
     }
 }
 
@@ -206,11 +200,10 @@ function primegame()
                     break;
                 }
                 continue;
-            }
-            else {
-                line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-                break;
-            }
+            } else {
+                  line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+                  break;
+              }
         }
 
         for ($iter = 2; $iter < $random_number; $iter += 1) {
@@ -230,10 +223,9 @@ function primegame()
                 break;
             }
             continue;
-        }
-        else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
-            break;
-        }
+        } else {
+              line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
+              break;
+          }
     }
 }
