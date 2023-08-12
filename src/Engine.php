@@ -35,7 +35,7 @@ function evengame()
         } else {
               line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
               break;
-          }
+        }
     }
 }
 
@@ -81,7 +81,7 @@ function calcgame()
         } else {
               line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
               break;
-          }
+        }
     }
 }
 
@@ -105,7 +105,7 @@ function gcdgame()
         }
 
         for ($iter = 1; $iter <= $lowest; $iter += 1) {
-            if (($first_number % $iter == 0) && ($second_number % $iter == 0)){
+            if (($first_number % $iter == 0) && ($second_number % $iter == 0)) {
                 $check = $iter;
             }
         }
@@ -124,7 +124,7 @@ function gcdgame()
         } else {
               line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
               break;
-          }
+        }
     }
 }
 
@@ -157,15 +157,15 @@ function progressiongame()
                 $check = $current;
             } else {
                   $show = $show . "{$current} ";
-              }
-	}
+            }
+        }
 
         line("Question: {$show}");
         $answer = prompt('Your answer');
 
         if ($answer == $check) {
             line("Correct!");
-            if($i === 3) {
+            if ($i === 3) {
                 line("Congratulations, {$name}!");
                 break;
             }
@@ -173,7 +173,7 @@ function progressiongame()
         } else {
               line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
               break;
-          }
+        }
     }
 }
 
@@ -203,12 +203,12 @@ function primegame()
             } else {
                   line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
                   break;
-              }
+            }
         }
 
         for ($iter = 2; $iter < $random_number; $iter += 1) {
             if ($random_number % $iter == 0) {
-            $check = 'no';
+                $check = 'no';
                 break;
             }
         }
@@ -218,7 +218,7 @@ function primegame()
 
         if ($answer == $check) {
             line("Correct!");
-            if($i === 3) {
+            if ($i === 3) {
                 line("Congratulations, {$name}!");
                 break;
             }
@@ -226,6 +226,6 @@ function primegame()
         } else {
               line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
               break;
-          }
+        }
     }
 }
