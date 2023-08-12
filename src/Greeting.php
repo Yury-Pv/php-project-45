@@ -13,4 +13,3 @@ function greeting()
 
     return $name;
 }
-
