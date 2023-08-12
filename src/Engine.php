@@ -36,7 +36,7 @@ function evengame()
 	}
 
 	else {
-	    line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+	    line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
 	    break;
 	}
     }
@@ -85,7 +85,7 @@ function calcgame()
         }
 
         else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
             break;
         }
     }
@@ -132,7 +132,7 @@ function gcdgame()
         }
 
         else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
             break;
         }
     }
@@ -186,7 +186,7 @@ function progressiongame()
         }
 
         else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
             break;
         }
     }
@@ -219,7 +219,7 @@ function primegame()
             }
 
             else {
-                line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+                line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
                 break;
             }
 	}
@@ -244,7 +244,7 @@ function primegame()
         }
 
         else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again {$name}!");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$check}'.\nLet's try again, {$name}!");
             break;
         }
     }
